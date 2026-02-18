@@ -17,28 +17,27 @@ export default function CardsComponents() {
   return (
     <div
       className="
-        grid
-        gap-8
-        grid-cols-1
-        sm:grid-cols-2
-        lg:grid-cols-3
-        xl:grid-cols-4
-      "
+            grid
+            gap-10
+            grid-cols-1
+            md:grid-cols-2
+            xl:grid-cols-3
+        "
     >
       {menuItems.map((item) => (
         <Card
           key={item.title}
-          className="border-0 bg-[#6F5B40]"
+          className="border-0 bg-[#6F5B40] pt-0"
         >
           <img
             src={item.image}
             alt={item.title}
-            className="w-full h-48 object-cover rounded-t"
+            className="w-full h-48 object-cover rounded-top rounded-xl"
           />
 
           <CardHeader className="font-cormorant">
             <CardAction>
-              <Badge variant="secondary">
+              <Badge variant="custom">
                 {item.price}
               </Badge>
             </CardAction>
@@ -47,9 +46,6 @@ export default function CardsComponents() {
               {item.title}
             </CardTitle>
 
-            <CardDescription className="text-white/80">
-              {item.description}
-            </CardDescription>
           </CardHeader>
 
           <CardFooter>

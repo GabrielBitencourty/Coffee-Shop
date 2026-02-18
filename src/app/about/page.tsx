@@ -1,8 +1,19 @@
 'use client'
 
+import Image from "next/image"
+
 export default function AboutPage() {
   return (
     <main className="w-full py-24 px-6 font-cormorant">
+       <div className="fixed inset-0 -z-10">
+        <Image
+          src="/assets/background.png"
+          alt="Coffee background"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
       <div className="mx-auto max-w-6xl grid gap-16 md:grid-cols-2 items-center">
 
         <div className="flex flex-col gap-8">

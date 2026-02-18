@@ -1,3 +1,4 @@
+import { ShoppingBag } from "lucide-react";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuList } from "../ui/navigation-menu";
 import Link from "next/link";
 
